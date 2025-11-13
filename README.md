@@ -2,7 +2,7 @@
 
 Hecho por Sara Pérez
 
-> El link al repositorio es:
+> El link al repositorio es: <https://github.com/SaraPF3/museo>
 
 La clase **App** tiene el main en el que se ejecutan los hilos entrada y salida:
 
