@@ -7,11 +7,11 @@ public class Sala {
     
     private int aforo = 100;
 
-    public void incrementar() {
+    synchronized public void incrementar() {
         aforo++;
     }
 
-    public void decrementar() {
+    synchronized public void decrementar() {
         aforo--;
     }
 }

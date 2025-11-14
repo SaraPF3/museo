@@ -9,10 +9,11 @@ public class App {
     public static final int PERSONAS_ENTRAN = 10;
     public static final int PERSONAS_SALEN = 15;
     public static final int VAL_I = 1;
+    public static final int TIEMPO_ESPERA = 1000;
     public static final String TXT_SALA = "En la sala hay ";
     public static final String PERSONAS = " personas";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         
         Sala sala = new Sala();
 
@@ -25,6 +26,8 @@ public class App {
             Thread salida = new Thread (new Salida(sala));
             salida.start();
         }
+
+        Thread.sleep(TIEMPO_ESPERA);
 
         System.out.println(TXT_SALA + sala.getAforo() + PERSONAS);
     }
