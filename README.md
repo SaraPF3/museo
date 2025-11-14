@@ -2,7 +2,7 @@
 
 Hecho por Sara Pérez
 
-> El link al repositorio es: <https://github.com/SaraPF3/museo>
+> El link al repositorio es: <https://github.com/SaraPF3/museo/tree/museo_monitores>
 
 La clase **App** tiene el main en el que se ejecutan los hilos entrada y salida:
 
