@@ -8,6 +8,7 @@ public class App {
 
     public static final int PERSONAS_ENTRAN = 10;
     public static final int PERSONAS_SALEN = 15;
+    public static final int VAL_I = 1;
     public static final String TXT_SALA = "En la sala hay ";
     public static final String PERSONAS = " personas";
 
@@ -15,12 +16,12 @@ public class App {
         
         Sala sala = new Sala();
 
-        for (int i = 1; i <= PERSONAS_ENTRAN; i++){
+        for (int i = VAL_I; i <= PERSONAS_ENTRAN; i++){
             Thread entrada = new Thread (new Entrada(sala));
             entrada.start();
         }
 
-        for (int i = 1; i <= PERSONAS_SALEN; i++){
+        for (int i = VAL_I; i <= PERSONAS_SALEN; i++){
             Thread salida = new Thread (new Salida(sala));
             salida.start();
         }
